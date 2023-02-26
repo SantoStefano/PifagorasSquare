@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body  {
+  background: #f7f1f1;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      'square out';
+     grid-template-rows: 100px 100% ;
+      grid-auto-columns: 1fr 55%;
+      height: 100%;
+      color: black;
+      font-family: cursive;
+    
+  }
+  .header {
+    grid-area: header;
+    border-bottom: 1px solid black;
+    font-size: 50px;
+    padding: 16px;
+  }
+  .square {
+    grid-area: square;
+    border-right: 1px solid black;
+    padding: 30px;
+    font-size: 30px;
+  }
+  .out {
+    grid-area: out;
+  }
+
+  input {
+      margin-left: 20px;
+      padding: 8px;
+      font-size: 20px;
+      border-radius: 10px;
+  }
+  .start, .again {
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: cursive;
+      cursor: pointer;
+      border-radius: 5px;
+      background: silver;
+  }
+  
+  
+  .start:hover, .again:hover {
+    color: #f7f1f1;
+    filter: brightness(110%);
+  }
+  .start:active, .again:active {
+      filter: brightness(90%);
+  }
+  
+
+  table {
+      border: 1px solid black;
+      margin: 60px auto;
+      font-size: 60px;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+  }
+  td, tr {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  .out {
+    font-size: 22px;
+    padding: 2%;
+  }
+
+  span {
+    display: block;
+    font-size: 13px;
+  }
+
+  
+  .hide {
+    display: none;
+  }
+  
+  
